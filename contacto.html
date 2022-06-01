@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;600&family=Poppins:ital,wght@0,100;0,500;0,700;1,200&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cbebf4cf88.js" crossorigin="anonymous"></script>
+  <title>Deco Facil</title>
+</head>
+<body>
+  <header class="header-menu">
+    <h1><a href="/index.html">DecoFácil</a></h1>
+    <div class="menu-contenedor">
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/decoracion.html">Decoración</a></li>
+                <li><a href="/diy.html">DIY</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- menu responsive -->
+    <div class="menu-navbar">
+        <nav class="menu-hamburguesa">
+            <input class="menu-check" type="checkbox" name="menu-check" value="" id="menu-check">
+            <div class="contenedor-mobile">
+                <label class="menu-open" for="menu-check">
+                    <span class="linea1"></span>
+                    <span class="linea2"></span>
+                    <span class="linea3"></span>
+                </label>
+            </div>
+            <div class="menu-options">
+                <ul class="menu-lista">
+                    <li><a href="/decoracion.html">Decoración</a></li>
+                    <li><a href="/diy.html">DIY</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </div>  
+        </nav>   
+    </div>
+    <!-- termina el menu responsive -->
+  </header>
+  
+  <main class="contenedor-form">
+    <div class="contenedor-contacto">
+      <div class="titulo-form">
+        <h1>Contacto</h1>
+        <p>¡Esperamos tu mensaje!</p>
+        <p>Lo responderemos lo antes posible</p>
+        <div class="icon-mail-form">
+          <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
+        </div>
+      </div>
+
+      <div class="form">
+        <form action="" method="post" id="formulario";>
+          <fieldset class="info-personal"> 
+            <legend>Información personal</legend>
+
+            <!-- grupo nombre -->
+            <div class= "grupo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre">
+            </div>
+
+            <!-- grupo apellido -->
+            <div class="grupo">
+              <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+            </div>
+
+            <!-- grupo email -->
+            <div class="grupo">
+              <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+          </fieldset>
+
+           <!-- grupo consulta -->
+          <fieldset class="tema-consulta">
+            <legend>¿Sobre que tema es tu consulta?</legend>
+
+            <div class="btn-consulta">
+              <div>
+                <input type="radio" name="consulta" id="deco">
+                <label for="deco">Decoración</label>
+              </div>
+              <div>
+                <input type="radio" name="consulta" id="diy">
+                <label for="diy">DIY</label> 
+              </div>
+              <div>
+                <input type="radio" name="consulta" id="otro">
+                <label for="otro">Otro</label> 
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="msj">
+            <legend>Dejanos tu mensaje</legend>
+            <textarea name="textarea" id="textarea"></textarea>
+          </fieldset>
+  
+          <div class="btn-enviar-borrar">
+            <button type="submit" class="btn-enviar">Enviar</button>
+            <input class="btn-borrar" id="borrar" type="reset" value="Borrar">
+            <p class="warnings" id="warnings"></p>
+          </div> 
+
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="contenedor">
+        <div class="footer-info">
+            <p class="footer-logo">Deco Fácil</p>
+            <p class="maildeco"><a href="#">decofacil@gmail.com </a></p>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-derechos">
+            <p>©2022 Deco Facil. Todos las imágenes y contenidos fueron usados sin fines comeriales, sólo como práctica educativa</p>
+        </div>
+    </div>
+  </footer>
+  <script src="/contacto.js"></script> 
+  <script src="https://kit.fontawesome.com/cbebf4cf88.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+ 
